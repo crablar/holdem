@@ -1,7 +1,6 @@
-angular.module('myApp, []')
-.run(function($rootScope, $timeout) {
-        $rootScope.isDisabled = true;
-        $timeout(function(){
-            $rootScope.isDisabled = false;
-        }, 5000);
-    });
+angular.module('myApp', [])
+    .controller('GameController', ['$scope', function($scope){
+        $scope.hero = new Player("Jeff");
+        $scope.villain = new Player("Peter");
+
+    }]);
