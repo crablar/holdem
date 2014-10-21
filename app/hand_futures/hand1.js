@@ -6,8 +6,20 @@ var future = {
     river:'9d',
     button: 'hero',
     decisionTree: {
+        preflop: {
+            heroStarts : true,
+            heroActions: {
+                // hero bet sizes : villain responses
+                '0': 'invalid: hero must at least call',
+                '1': 'check',
+                '2 - 3': 'invalid: hero must at least double big blind',
+                '4 - 8': 'call',
+                '9 - 100': 'fold'
+            }
+        },
         flop: {
-            
+            heroStarts : false,
+            villainAction :
         },
         turn: {
 

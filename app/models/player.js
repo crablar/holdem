@@ -1,6 +1,6 @@
 var Player = function(name){
     this.name = name;
-    this.chipCount = 100;
+    this.chipCount = 200;
 }
 
 Player.prototype = {
